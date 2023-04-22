@@ -1,5 +1,7 @@
 package com.wingliberty.sendmessage.service;
 
+import com.wingliberty.sendmessage.dto.VerifySms;
+
 /**
  * 短信
  *
@@ -15,4 +17,5 @@ public interface SmsService {
      */
     void sendSMS(String phone);
 
+    boolean verifyCode(VerifySms verifySms);
 }
