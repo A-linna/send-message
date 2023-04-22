@@ -1,0 +1,16 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /message
+
+spring:
+  application:
+    name: send-message
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.252:8848,192.168.31.252:8858,192.168.31.252:8868
+  redis:
+    host: localhost
+    database: 0
+    port: 6379
